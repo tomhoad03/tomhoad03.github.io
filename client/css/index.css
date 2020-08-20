@@ -1,18 +1,18 @@
 .jumbotron-image {
     box-sizing: border-box;
-    min-height: 100vh;
     position: relative;
     transform-style: inherit;
     width: 100vw;
     text-align: center;
     text-transform: uppercase;
 
-    /*min-height: 500px;
+    max-height: 500px;
+    min-height: 300px;
 
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: cover;*/
+    background-size: cover;
 }
 
 .jumbotron-image,
