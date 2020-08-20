@@ -1,10 +1,10 @@
 .jumbotron-image {
-    min-height: 500px;
+    min-height: 1000px;
 
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: bottom;
+    background-size: 50% 50%;
 }
 
 .page-scroll{
