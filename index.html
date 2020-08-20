@@ -9,23 +9,77 @@
 <nav class="navbar navbar-expand navbar-light bg-light">
     <a class="navbar-brand">Tom Hoad</a>
 
+    <!-- Displays links to other webpages -->
     <div class="collapse navbar-collapse justify-content-between">
         <div class="navbar-nav">
             <a class="nav-item nav-link" href="#">Homepage</a>
             <a class="nav-item nav-link" href="#">Programming</a>
-            <a class="nav-item nav-link" href="#">GitHub</a>
-            <a class="nav-item nav-link disabled" href="#">Destiny 2</a>
+            <a class="nav-item nav-link" href="#">YouTube</a>
+            <a class="nav-item nav-link" href="#">Spotify</a>
+            <a class="nav-item nav-link disabled" href="#">Gaming</a>
         </div>
 
+        <!-- Displays links to other platforms -->
         <span class="navbar-text">
-            <img src="/client/svg/twitter.svg" width="25" height="25" href="https://twitter.com/tom_hoad03" alt="twitter">
-            <img src="/client/svg/github.svg" width="25" height="25" href="https://github.com/tomhoad03" alt="github">
-            <img src="/client/svg/linkedin.svg" width="25" height="25" href="https://www.linkedin.com/in/tom-hoad-a99b42194/" alt="linkedin">
-            <img src="/client/svg/youtube.svg" width="25" height="25" href="https://www.youtube.com/channel/UC9GUBApYcTEs_Auzwp2ja6Q" alt="youtube">
-            <button class="btn btn-outline-secondary">Search</button>
+            <a href="https://github.com/tomhoad03">
+                <img src="/client/svg/github.svg" width="20" height="20" class="mr-1 ml-1" alt="github">
+            </a>
+            <a href="https://www.linkedin.com/in/tom-hoad-a99b42194/">
+                <img src="/client/svg/linkedin.svg" width="20" height="20" class="mr-1 ml-1" alt="linkedin">
+            </a>
+            <a href="https://twitter.com/tom_hoad03">
+                <img src="/client/svg/twitter.svg" width="20" height="20" class="mr-1 ml-1" alt="twitter">
+            </a>
+            <a href="https://www.youtube.com/channel/UC9GUBApYcTEs_Auzwp2ja6Q">
+                <img src="/client/svg/youtube.svg" width="20" height="20" class="mr-1 ml-1" alt="youtube">
+            </a>
+
+            <button class="btn btn-outline-secondary">Download</button>
         </span>
     </div>
 </nav>
+
+<!-- Provides a carousel view of my work -->
+<div id="carousel" class="carousel slide p-md-4 rounded" data-ride="carousel">
+    <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner" data-pause="hover">
+        <!-- A link to information about me -->
+        <div class="carousel-item active" data-interval="10000">
+            <div class="jumbotron text-white bg-dark">
+                <h1 class="display-4">Hello World!</h1>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>About Me</h5>
+            </div>
+        </div>
+
+        <!-- A link to information about my youtube -->
+        <div class="carousel-item" data-interval="10000">
+            <div class="jumbotron text-white bg-dark">
+                <h1 class="display-4">YouTube</h1>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Gaming and Coronavirus</h5>
+            </div>
+        </div>
+
+        <!-- A link to information about my programming -->
+        <div class="carousel-item" data-interval="10000">
+            <div class="jumbotron text-white bg-dark">
+                <h1 class="display-4">Programming</h1>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>University and Home Projects</h5>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Provides Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
