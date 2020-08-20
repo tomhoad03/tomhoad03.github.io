@@ -8,11 +8,12 @@
 
         <!-- Provides Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
     <!-- Displays a navbar at the top of the page -->
-    <nav class="navbar navbar-expand navbar-light bg-light">
+    <nav class="navbar navbar-expand fixed-top scrolling-navbar navbar-light bg-light shadow">
         <a class="navbar-brand">Tom Hoad</a>
 
         <!-- Displays links to other webpages -->
@@ -26,74 +27,76 @@
             </div>
 
             <!-- Displays links to other platforms -->
-            <span class="navbar-text">
-                <a href="https://github.com/tomhoad03">
-                    <i class="fab fa-github mr-1 ml-1"></i>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="https://github.com/tomhoad03">
+                    <i class="fa fa-github mr-1"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/tom-hoad-a99b42194/">
-                    <i class="fab fa-linkedin-in mr-1 ml-1"></i>
+                <a class="nav-item nav-link" href="https://www.linkedin.com/in/tom-hoad-a99b42194/">
+                    <i class="fa fa-linkedin mr-1"></i>
                 </a>
-                <a href="https://twitter.com/tom_hoad03">
-                    <i class="fab fa-twitter mr-1 ml-1"></i>
+                <a class="nav-item nav-link" href="https://twitter.com/tom_hoad03">
+                    <i class="fa fa-twitter mr-1"></i>
                 </a>
-                <a href="https://www.youtube.com/channel/UC9GUBApYcTEs_Auzwp2ja6Q">
-                    <i class="fab fa-youtube mr-1 ml-1"></i>
+                <a class="nav-item nav-link" href="https://www.youtube.com/channel/UC9GUBApYcTEs_Auzwp2ja6Q">
+                    <i class="fa fa-youtube mr-1"></i>
                 </a>
 
-                <button class="btn btn-outline-secondary">Download</button>
-            </span>
+                <button class="btn btn-outline-secondary ml-3">Download</button>
+            </div>
         </div>
     </nav>
 
-    <!-- Provides a carousel view of my work -->
-    <div id="carousel" class="carousel slide p-md-4 rounded" data-ride="carousel">
-        <!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
-        </ol>
+    <div class="container-fluid" style="margin-top: 80px;">
+        <!-- Provides a carousel view of my work -->
+        <div id="carousel" class="carousel slide p-md-4 rounded" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
 
-        <div class="carousel-inner" data-pause="hover">
-            <!-- A link to information about me -->
-            <div class="carousel-item active" data-interval="10000">
-                <div class="jumbotron jumbotron-image text-white" style="background-image: url(/client/img/pyramid.jpg);">
-                    <h1 class="display-4">About Me</h1>
-                    <p>Example Text</p>
+            <div class="carousel-inner" data-pause="hover">
+                <!-- A link to information about me -->
+                <div class="carousel-item active" data-interval="10000">
+                    <div class="jumbotron jumbotron-image text-white" style="background-image: url(/client/img/pyramid.jpg);">
+                        <h1 class="display-4">About Me</h1>
+                        <p>Example Text</p>
+                    </div>
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>About Me</h5>
+                    </div>
                 </div>
 
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>About Me</h5>
-                </div>
-            </div>
+                <!-- A link to information about my youtube -->
+                <div class="carousel-item" data-interval="10000">
+                    <div class="jumbotron jumbotron-image text-white" style="background-image: url(/client/img/solstice.jpg);">
+                        <h1 class="display-4">About Me</h1>
+                        <p>Example Text</p>
+                    </div>
 
-            <!-- A link to information about my youtube -->
-            <div class="carousel-item" data-interval="10000">
-                <div class="jumbotron jumbotron-image text-white" style="background-image: url(/client/img/solstice.jpg);">
-                    <h1 class="display-4">About Me</h1>
-                    <p>Example Text</p>
-                </div>
-
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Gaming and Coronavirus</h5>
-                </div>
-            </div>
-
-            <!-- A link to information about my programming -->
-            <div class="carousel-item" data-interval="10000">
-                <div class="jumbotron jumbotron-image text-white" style="background-image: url(/client/img/europa.jpg);">
-                    <h1 class="display-4">About Me</h1>
-                    <p>Example Text</p>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Gaming and Coronavirus</h5>
+                    </div>
                 </div>
 
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>University and Home Projects</h5>
+                <!-- A link to information about my programming -->
+                <div class="carousel-item" data-interval="10000">
+                    <div class="jumbotron jumbotron-image text-white" style="background-image: url(/client/img/europa.jpg);">
+                        <h1 class="display-4">About Me</h1>
+                        <p>Example Text</p>
+                    </div>
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>University and Home Projects</h5>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="page-scroll"></div>
+        <div class="page-scroll"></div>
+    </div>
 
     <!-- Provides Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
