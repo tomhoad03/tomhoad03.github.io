@@ -1,11 +1,20 @@
-.jumbotron-image .bg {
-    text-transform: uppercase;
-    text-align: center;
-
+.jumbotron-image {
     /* Parallax Demo : https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/ */
     background-size: cover;
     min-height: 500px;
+}
 
+.bg {
     -webkit-filter: blur(3px);
     filter: blur(3px);
+}
+
+.carousel-img {
+    filter: blur(3px);
+    border-radius: 50%;
+}
+
+.carousel-item {
+    text-transform: uppercase;
+    text-align: center;
 }
