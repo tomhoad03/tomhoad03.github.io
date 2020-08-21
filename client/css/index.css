@@ -1,40 +1,9 @@
-.carousel-item {
-    perspective: 8px;
-    perspective-origin: 50%;
-}
-
 .jumbotron-image {
     /* Parallax Demo : https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/ */
     text-transform: uppercase;
-
+    background-size: cover;
     min-height: 500px;
 
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: cover;
-}
-
-.parallax {
-    perspective: 1px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-.parallax__layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.parallax__layer--base {
-    transform: translateZ(0);
-}
-.parallax__layer--back {
-    transform: translateZ(-1px);
-}
-
-.page-scroll{
-    height:5000px;
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
 }
