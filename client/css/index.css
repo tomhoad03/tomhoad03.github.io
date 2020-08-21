@@ -1,9 +1,11 @@
-.jumbotron-image {
-    /* Parallax Demo : https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/ */
+.jumbotron-image .bg {
     text-transform: uppercase;
+    text-align: center;
+
+    /* Parallax Demo : https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/ */
     background-size: cover;
     min-height: 500px;
 
-    -webkit-filter: blur(8px);
-    filter: blur(8px);
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
 }
