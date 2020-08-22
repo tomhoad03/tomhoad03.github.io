@@ -9,6 +9,7 @@ function loadHeader() {
         '                        <div class="navbar-nav">\n' +
         '                            <a class="nav-item nav-link" href="index.html">Homepage</a>\n' +
         '                            <a class="nav-item nav-link" href="#">Programming</a>\n' +
+        '                            <a class="nav-item nav-link" href="#">Film Reviews</a>\n' +
         '                            <a class="nav-item nav-link" href="youtube.html">YouTube</a>\n' +
         '                            <a class="nav-item nav-link" href="#">Spotify</a>\n' +
         '                            <a class="nav-item nav-link disabled" href="#">Gaming</a>\n' +
@@ -26,7 +27,10 @@ function loadHeader() {
         '                                <i class="fa fa-twitter mr-1"></i>\n' +
         '                            </a>\n' +
         '                            <a class="nav-item nav-link" href="https://www.youtube.com/channel/UC9GUBApYcTEs_Auzwp2ja6Q">\n' +
-        '                                <i class="fa fa-youtube mr-1"></i>\n' +
+        '                                <i class="fa fa-youtube-play mr-1"></i>\n' +
+        '                            </a>\n' +
+        '                            <a class="nav-item nav-link" href="https://open.spotify.com/user/11153837184?si=dpGKiog9T4eKVrg1K94D6A">\n' +
+        '                                <i class="fa fa-spotify mr-1"></i>\n' +
         '                            </a>\n' +
         '\n' +
         '                            <button class="btn btn-outline-secondary ml-3">Download</button>\n' +
