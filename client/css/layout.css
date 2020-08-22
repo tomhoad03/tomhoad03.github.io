@@ -1,3 +1,15 @@
+/* Custom font */
 html * {
     font-family: 'Open Sans', sans-serif; !important;
+}
+
+/* Custom scrollbar */
+body::-webkit-scrollbar {
+    width: 0.3rem;
+}
+body::-webkit-scrollbar-track {
+    background: #343a40;
+}
+body::-webkit-scrollbar-thumb {
+    background: #f8f9fa;
 }
