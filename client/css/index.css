@@ -1,3 +1,7 @@
+html * {
+    font-family: 'Open Sans', sans-serif; !important;
+}
+
 .jumbotron-image {
     margin-bottom: 0 !important;
     text-transform: capitalize;
