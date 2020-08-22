@@ -1,5 +1,12 @@
-.img {
-    -webkit-filter: blur(3px);
+.carousel-item {
+    max-height: 500px;
     filter: blur(3px);
-    border-radius: 50%;
+}
+
+img {
+
+}
+
+.page-scroll{
+    height:5000px;
 }
