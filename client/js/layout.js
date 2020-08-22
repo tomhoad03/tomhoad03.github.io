@@ -1,4 +1,4 @@
-function loadHeader() {
+function loadHeader(webpage) {
     let header = '<!-- Displays a navbar at the top of the page -->\n' +
         '            <nav class="navbar navbar-expand fixed-top scrolling-navbar navbar-light bg-light shadow">\n' +
         '                <div id="navbar" class="container">\n' +
@@ -7,12 +7,12 @@ function loadHeader() {
         '                    <!-- Displays links to other webpages -->\n' +
         '                    <div class="collapse navbar-collapse justify-content-between">\n' +
         '                        <div class="navbar-nav">\n' +
-        '                            <a class="nav-item nav-link" href="index.html">Homepage</a>\n' +
-        '                            <a class="nav-item nav-link" href="#">Programming</a>\n' +
-        '                            <a class="nav-item nav-link" href="#">Film Reviews</a>\n' +
-        '                            <a class="nav-item nav-link" href="youtube.html">YouTube</a>\n' +
-        '                            <a class="nav-item nav-link" href="#">Spotify</a>\n' +
-        '                            <a class="nav-item nav-link disabled" href="#">Gaming</a>\n' +
+        '                            <a id="link-index" class="nav-item nav-link" href="index.html">Homepage</a>\n' +
+        '                            <a id="link-code" class="nav-item nav-link" href="#">Programming</a>\n' +
+        '                            <a id="link-reviews" class="nav-item nav-link" href="#">Film Reviews</a>\n' +
+        '                            <a id="link-youtube" class="nav-item nav-link" href="youtube.html">YouTube</a>\n' +
+        '                            <a id="link-spotify" class="nav-item nav-link" href="#">Spotify</a>\n' +
+        '                            <a id="link-gaming" class="nav-item nav-link disabled" href="#">Gaming</a>\n' +
         '                        </div>\n' +
         '\n' +
         '                        <!-- Displays links to other platforms -->\n' +
@@ -40,4 +40,5 @@ function loadHeader() {
         '            </nav>';
 
     $('#header').append(header);
+    $('#link-' + webpage).addClass(' active');
 }
