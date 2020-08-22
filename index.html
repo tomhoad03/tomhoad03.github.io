@@ -4,7 +4,7 @@
         <title>Personal Website</title>
 
         <!-- Provides external CSS -->
-        <link rel="stylesheet" href="/client/css/index.css">
+        <link rel="stylesheet" type="text/css" href="client/css/index.css">
 
         <!-- Provides Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -52,11 +52,11 @@
 
     <div class="container" style="margin-top: 80px">
         <!-- Provides a carousel view of my work -->
-        <div id="carousel" class="carousel slide rounded-lg" data-ride="carousel">
+        <div id="carousel" class="carousel slide rounded shadow" data-ride="carousel">
             <div class="carousel-inner">
                 <!-- Information about me -->
                 <div class="carousel-item active">
-                    <div class="jumbotron jumbotron-image" id="pyramid-img">
+                    <div class="jumbotron jumbotron-image" style="background-image: url(/client/img/pyramid.jpg);">
                         <h1 class="display-4">About Me</h1>
                         <p class="lead">An introduction to me</p>
                     </div>
@@ -64,7 +64,7 @@
 
                 <!-- Information about my youtube -->
                 <div class="carousel-item">
-                    <div class="jumbotron jumbotron-image" id="solstice-img">
+                    <div class="jumbotron jumbotron-image" style="background-image: url(/client/img/solstice.jpg);">
                         <h1 class="display-4">YouTube</h1>
                         <p class="lead">Video gaming and coronavirus</p>
                     </div>
@@ -72,12 +72,14 @@
 
                 <!-- Information about my programming -->
                 <div class="carousel-item">
-                    <div class="jumbotron jumbotron-image" id="europa-img">
+                    <div class="jumbotron jumbotron-image" style="background-image: url(/client/img/europa.jpg);">
                         <h1 class="display-4">Programming</h1>
                         <p class="lead">Computer science at university</p>
                     </div>
                 </div>
             </div>
+
+            <img src="/client/img/pyramid.jpg">
 
             <!-- Carousel buttons -->
             <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">

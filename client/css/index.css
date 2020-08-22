@@ -1,18 +1,11 @@
-.carousel-item {
-    max-height: 500px;
-    filter: blur(3px);
-}
+.jumbotron-image {
+    margin-bottom: 0 !important;
+    text-align: center;
 
-#pyramid-img {
-    background-image: url(/img/pyramid.jpg);
-}
-
-#solstice-img {
-    background-image: url(/img/solstice.jpg);
-}
-
-#europa-img {
-    background-image: url(/img/europa.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .page-scroll{
