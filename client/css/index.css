@@ -3,8 +3,16 @@
     filter: blur(3px);
 }
 
-img {
+#pyramid-img {
+    background-image: url(/img/pyramid.jpg);
+}
 
+#solstice-img {
+    background-image: url(/img/solstice.jpg);
+}
+
+#europa-img {
+    background-image: url(/img/europa.jpg);
 }
 
 .page-scroll{
