@@ -11,7 +11,7 @@ function loadHeader(webpage) {
         '                            <a id="link-code" class="nav-item nav-link" href="#">Programming</a>\n' +
         '                            <a id="link-reviews" class="nav-item nav-link" href="#">Film Reviews</a>\n' +
         '                            <a id="link-youtube" class="nav-item nav-link" href="youtube.html">YouTube</a>\n' +
-        '                            <a id="link-spotify" class="nav-item nav-link" href="#">Spotify</a>\n' +
+        '                            <a id="link-spotify" class="nav-item nav-link" href="spotify.html">Spotify</a>\n' +
         '                            <a id="link-gaming" class="nav-item nav-link disabled" href="#">Gaming</a>\n' +
         '                        </div>\n' +
         '\n' +
