@@ -6,6 +6,7 @@ html * {
 /* Navbar customisation */
 .navbar {
     background-color: #343a40;
+    transition: background-color 0.2s;
 }
 #webpage-links * {
     color: #f8f9fa;
@@ -26,8 +27,8 @@ html * {
 }
 #download-button:hover {
     color: #343a40;
-    background-color: #f8f9fa;
     border-color: #f8f9fa;
+    background-color: #f8f9fa;
 }
 
 /* Custom scrollbar */

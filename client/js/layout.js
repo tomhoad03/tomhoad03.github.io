@@ -1,46 +1,43 @@
-function loadHeader(webpage) {
-    let header = '<!-- Displays a navbar at the top of the page -->\n' +
-        '            <nav class="navbar navbar-expand fixed-top scrolling-navbar shadow">\n' +
-        '                <div id="navbar" class="container">\n' +
-        '                    <a class="navbar-brand" href="index.html">Tom Hoad</a>\n' +
-        '\n' +
-        '                    <!-- Displays links to other webpages -->\n' +
-        '                    <div class="collapse navbar-collapse justify-content-between">\n' +
-        '                        <div id="webpage-links" class="navbar-nav">\n' +
-        '                            <a id="link-programming" class="nav-item nav-link" href="programming.html">Programming</a>\n' +
-        '                            <a id="link-reviews" class="nav-item nav-link" href="reviews.html">Film Reviews</a>\n' +
-        '                            <a id="link-youtube" class="nav-item nav-link" href="youtube.html">YouTube</a>\n' +
-        '                            <a id="link-spotify" class="nav-item nav-link" href="spotify.html">Spotify</a>\n' +
-        '                            <a id="link-gaming" class="nav-item nav-link disabled" href="#">Gaming</a>\n' +
-        '                        </div>\n' +
-        '\n' +
-        '                        <!-- Displays links to other platforms -->\n' +
-        '                        <div id="social-icons" class="navbar-nav">\n' +
-        '                            <a class="nav-item nav-link" href="https://github.com/tomhoad03">\n' +
-        '                                <i class="fa fa-github mr-1"></i>\n' +
-        '                            </a>\n' +
-        '                            <a class="nav-item nav-link" href="https://www.linkedin.com/in/tom-hoad-a99b42194/">\n' +
-        '                                <i class="fa fa-linkedin mr-1"></i>\n' +
-        '                            </a>\n' +
-        '                            <a class="nav-item nav-link" href="https://twitter.com/tom_hoad03">\n' +
-        '                                <i class="fa fa-twitter mr-1"></i>\n' +
-        '                            </a>\n' +
-        '                            <a class="nav-item nav-link" href="https://www.youtube.com/channel/UC9GUBApYcTEs_Auzwp2ja6Q">\n' +
-        '                                <i class="fa fa-youtube-play mr-1"></i>\n' +
-        '                            </a>\n' +
-        '                            <a class="nav-item nav-link" href="https://open.spotify.com/user/11153837184?si=dpGKiog9T4eKVrg1K94D6A">\n' +
-        '                                <i class="fa fa-spotify mr-1"></i>\n' +
-        '                            </a>\n' +
-        '\n' +
-        '                            <button id="download-button" class="btn btn-outline-light ml-3">Download</button>\n' +
-        '                        </div>\n' +
-        '                    </div>\n' +
-        '                </div>\n' +
-        '            </nav>';
-
-    $('#header').append(header);
-
+function loadPage(webpage) {
+    // Show the active webpage
     if (webpage != null) {
-        $('#link-' + webpage).addClass(' active');
+        $("#link-" + webpage).addClass(" active");
+    }
+}
+
+// Runs on scroll
+window.onscroll = function() {
+    scrollFunction()
+};
+
+// Change navbar when scrolling
+function scrollFunction() {
+    let navbarBtn = $("#download-button");
+    let navbarBtnHover = $("#download-button:hover");
+
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        // What the navbar changes too.
+        $(".navbar").css("background-color", "#f8f9fa");
+        $("#webpage-links *").css("color", "#343a40");
+        $(".navbar-brand").css("color", "#343a40");
+        $("#social-icons *").css("color", "#343a40");
+
+        navbarBtn.css("color", "#343a40");
+        navbarBtn.css("border-color", "#343a40");
+        navbarBtnHover.css("color", "#f8f9fa");
+        navbarBtnHover.css("background-color", "#343a40");
+        navbarBtnHover.css("border-color", "#343a40");
+    } else {
+        // When the navbar is at the top
+        $(".navbar").css("background-color", "#343a40");
+        $("#webpage-links *").css("color", "#f8f9fa");
+        $(".navbar-brand").css("color", "#f8f9fa");
+        $("#social-icons *").css("color", "#f8f9fa");
+
+        navbarBtn.css("color", "#f8f9fa");
+        navbarBtn.css("border-color", "#f8f9fa");
+        navbarBtnHover.css("color", "#343a40");
+        navbarBtnHover.css("background-color", "#f8f9fa");
+        navbarBtnHover.css("border-color", "#f8f9fa");
     }
 }

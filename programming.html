@@ -12,10 +12,45 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-    <body onload="loadHeader('programming');">
-        <header id="header"></header>
+    <body onload="loadPage('programming');">
+        <header id="header">
+            <!-- Displays a navbar at the top of the page -->
+            <nav class="navbar navbar-expand fixed-top scrolling-navbar shadow">
+                <div id="navbar" class="container">
+                    <a class="navbar-brand" href="index.html">Tom Hoad</a>
 
+                    <!-- Displays links to other webpages -->
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div id="webpage-links" class="navbar-nav">
+                            <a id="link-programming" class="nav-item nav-link" href="programming.html">Programming</a>
+                            <a id="link-reviews" class="nav-item nav-link" href="reviews.html">Film Reviews</a>
+                            <a id="link-youtube" class="nav-item nav-link" href="youtube.html">YouTube</a>
+                            <a id="link-spotify" class="nav-item nav-link" href="spotify.html">Spotify</a>
+                            <a id="link-gaming" class="nav-item nav-link disabled" href="#">Gaming</a>
+                        </div>
 
+                        <!-- Displays links to other platforms -->
+                        <div id="social-icons" class="navbar-nav">
+                            <a class="nav-item nav-link" href="https://github.com/tomhoad03">
+                                <i class="fa fa-github mr-1"></i>
+                            </a>
+                            <a class="nav-item nav-link" href="https://www.linkedin.com/in/tom-hoad-a99b42194/">
+                                <i class="fa fa-linkedin mr-1"></i>
+                            </a><a class="nav-item nav-link" href="https://twitter.com/tom_hoad03">
+                            <i class="fa fa-twitter mr-1"></i>
+                        </a>
+                            <a class="nav-item nav-link" href="https://www.youtube.com/channel/UC9GUBApYcTEs_Auzwp2ja6Q">
+                                <i class="fa fa-youtube-play mr-1"></i>
+                            </a>
+                            <a class="nav-item nav-link" href="https://open.spotify.com/user/11153837184?si=dpGKiog9T4eKVrg1K94D6A">
+                                <i class="fa fa-spotify mr-1"></i>
+                            </a>
+                            <button id="download-button" class="btn btn-outline-light ml-3">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
         <!-- Provides external JS -->
         <script type="text/javascript" src="client/js/layout.js"></script>
