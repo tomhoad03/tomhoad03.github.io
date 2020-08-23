@@ -3,6 +3,33 @@ html * {
     font-family: 'Open Sans', sans-serif; !important;
 }
 
+/* Navbar customisation */
+.navbar {
+    background-color: #343a40;
+}
+#webpage-links * {
+    color: #f8f9fa;
+    opacity: 50%;
+}
+.active {
+    opacity: 100%;
+}
+.navbar-brand {
+    color: #f8f9fa;
+}
+#social-icons * {
+    color: #f8f9fa;
+}
+#download-button {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+#download-button:hover {
+    color: #343a40;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
 /* Custom scrollbar */
 body::-webkit-scrollbar {
     width: 0.3rem;
