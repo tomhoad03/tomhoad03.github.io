@@ -1,10 +1,3 @@
-function loadPage(webpage) {
-    // Show the active webpage
-    if (webpage != null) {
-        $("#link-" + webpage).addClass(" active");
-    }
-}
-
 // Runs on scroll
 window.onscroll = function() {
     scrollFunction()
