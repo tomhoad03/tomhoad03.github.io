@@ -16,18 +16,31 @@ html * {
 .active {
     opacity: 100%;
 }
-.nav-link::after {
-    content: '';
-    display: block;
+.nav-link{
+    position: relative;
+}
+.nav-link:before, .nav-link:after {
+    content: "";
     width: 0;
+    bottom: 0;
     height: 3px;
-    background: #f8f9fa;
-    transition: width 0.3s;
+    position: absolute;
+    background-color: yellow;
+    transition: width .15s ease-out;
 }
-.nav-link:hover::after {
+.nav-link:before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav-link:after {
+    right: 50%;
+    transform: translateX(50%);
+}
+.nav-link:hover:before, .nav-link:hover:after {
     width: 100%;
-    transition: width;
+    transition-duration: .15s;
 }
+
 .navbar-brand {
     color: #f8f9fa;
 }
