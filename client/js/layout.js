@@ -15,7 +15,7 @@ function scrollFunction() {
     let navbarBtn = $("#download-button");
     let navbarBtnHover = $("#download-button:hover");
 
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         // What the navbar changes too.
         $(".navbar").css("background-color", "#f8f9fa");
         $("#webpage-links *").css("color", "#343a40");

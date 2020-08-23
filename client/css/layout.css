@@ -5,8 +5,9 @@ html * {
 
 /* Navbar customisation */
 .navbar {
+    transition: background-color 0.5s;
     background-color: #343a40;
-    transition: background-color 0.2s;
+    height: 64px;
 }
 #webpage-links * {
     color: #f8f9fa;
