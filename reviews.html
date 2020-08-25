@@ -3,6 +3,21 @@
     <head>
         <title>Film Reviews</title>
 
+        <!-- Provides internal CSS -->
+        <style>
+            #reviews * {
+                display: inline-block;
+            }
+            #reviews-icon {
+                margin-left: 20px;
+                font-size: 40px;
+                color: #343a40;
+            }
+            #reviews-icon:hover {
+                text-shadow: 0 0 6px #b8b8b8;
+            }
+        </style>
+
         <!-- Provides external CSS -->
         <link rel="stylesheet" type="text/css" href="client/css/layout.css">
 
@@ -52,8 +67,78 @@
             </nav>
         </header>
 
+        <div id="reviews-main" class="container mb-4" style="margin-top: 110px">
+            <!-- Introduction to the channel -->
+            <div class="jumbotron bg-white shadow">
+                <div id="reviews">
+                    <h1>Film Reviews</h1>
+                    <a id="reviews-icon" href="https://twitter.com/tom_hoad03">
+                        <i class="fa fa-twitter mr-1"></i>
+                    </a>
+                </div>
+                <hr>
+                <p>
+                    Like most people, I watched too many films over the Coronavirus lockdown.
+                    It was probably a waste of time, but I wanted something to show for it.
+                    So I decided to use twitter as a platform for reviewing films and sharing that with my followers.
+                    I didn't really care if anyone read them, but it was a good way of remembering what I saw over lockdown.
+                    There are so many films we get to see and then forget that would make for great recommendations.
+                </p>
+                <p>
+                    None of the original reviews exist on my account anymore, so I'm keeping a record of all 90 or so here.
+                    I still review the odd film on twitter, but only the best ones that I know I will want to see again.
+                </p>
+            </div>
+
+            <div class="card-columns">
+                <div class="sortable">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Thor: Ragnarok (2017)</h5>
+                            <h6>&#11088;&#11088;&#11088;&#11088;&#11088;</h6>
+                            <p class="card-text">
+                                The best of the Thor films, suitable for newcomers and MCU veterans.
+                                The CGI, story and acting have definitely improved, but most of all it has comedy.
+                                A perfect prologue to Infinity War.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sortable">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sortable">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sortable">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Provides external JS -->
         <script type="text/javascript" src="client/js/layout.js"></script>
+
+        <script>
+            $(".sortable").sortable({
+            connectWith: 'div'
+            });
+        </script>
 
         <!-- Provides Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
