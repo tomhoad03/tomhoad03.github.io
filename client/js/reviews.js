@@ -1,3 +1,4 @@
+// Object for modelling a review
 function Review(title, year, score, description) {
     this.title = title;
     this.year = year;
@@ -10,13 +11,14 @@ function Review(title, year, score, description) {
 }
 
 function addReview() {
+    // Reads the JSON database storing reviews
     $.getJSON("./json/reviewsDB.json", function(data) {
         for (let key in data) {
             if (data.hasOwnProperty(key)) {
                 for (let group in data[key]) {
                     if (data[key].hasOwnProperty(group)) {
+                        // Displays the review on the webpage
                         let review = new Review(data[key][group].title, data[key][group].year, data[key][group].score, data[key][group].description);
-
                         $('.card-columns').append("<div class=\"card\">\n" +
                             "                    <div class=\"card-body\">\n" +
                             "                        <h5 class=\"card-title\">" + review.title + " (" + review.year + ")" + "</h5>\n" +

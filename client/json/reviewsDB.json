@@ -41,6 +41,72 @@
       "year": 2015,
       "score": 3,
       "description": "A stupid film but that’s what you get with Will Ferrel and Kevin Hart. It’s a kinda bad film, that’s kinda stupid but I had fun watching it. I wanted to see a bad comedy and I got one."
+    },
+    {
+      "title": "Midsommar",
+      "year": 2019,
+      "score": 2,
+      "description": "I was morbidly curious to see this film but I did not feel “enlightened” from seeing it. It’s a new take on horror films and horrifically believable. This was not a comfortable watch, and cannot recommend it for those who don’t love horror."
+    },
+    {
+      "title": "Skyscraper",
+      "year": 2018,
+      "score": 3,
+      "description": "Hate on the story and logistics of this film all you want, it is a fantastic disaster film. I spent most of this film with vertigo, sweaty palms or rapt attention. This film achieved what it wanted to achieve, and the rest can be ignored."
+    },
+    {
+      "title": "Rogue One",
+      "year": 2016,
+      "score": 6,
+      "description": "I have to question why the main Star Wars films aren’t more like this one. It has the best story, the best acting and some of the most iconic moments in the entire saga. You cannot love this film."
+    },
+    {
+      "title": "Skyfall",
+      "year": 2012,
+      "score": 5,
+      "description": "A showcase of how good James Bond films still are. Constantly subverting your expectations, the story is engaging and refreshingly new, whilst honouring its past. Points of action are memorable and the acting is flawless (looking at you Javier Bardem.)"
+    },
+    {
+      "title": "Doctor Strange",
+      "year": 2016,
+      "score": 2,
+      "description": "After Ant-Man, the MCU really wanted to show off their CGI skills. It’s very impressive too, but the rest of this film is disappointing. Bad story, bad pacing and a major villain issue. This film can’t hold its own."
+    },
+    {
+      "title": "No Country For Old Men",
+      "year": 2007,
+      "score": 3,
+      "description": "It’s hard to understand this film. One the one hand, it's mesmerising and dramatic; but on the other, it's drawn out and attempts to add too much meaning. The final act of the film feels out of place due to a lack of a typical ending."
+    },
+    {
+      "title": "Jurassic World: Fallen Kingdom",
+      "year": 2018,
+      "score": 4,
+      "description": "Feels like a really mixed bag. The film is made up of 3 or 4 amazing set pieces that do really well on there own but are poorly connected. Fear is effectively used though environment, humans and dinosaurs."
+    },
+    {
+      "title": "Solo",
+      "year": 2018,
+      "score": 2,
+      "description": "A different Star Wars film that’s a nice break from the fairly predictable films in the main Saga. Whilst there's a lot of fan service that most people will miss, it’s still a fun film with an interesting cast."
+    },
+    {
+      "title": "Captain America: Civil War",
+      "year": 2016,
+      "score": 5,
+      "description": "A perfect superhero film. The story dives into one of the most well recognised comic book stories and executes it really well. To top it all off, it uses the best MCU characters in the best way possible."
+    },
+    {
+      "title": "Star Wars: Revenge of the Sith",
+      "year": 2005,
+      "score": 3,
+      "description": "Right now, this film is more of a meme than a piece of cinema. There are some pretty big problems with acting, but the battles are so make up for it. A fitting end to the prequels."
+    },
+    {
+      "title": "Ant-Man",
+      "year": 2015,
+      "score": 4,
+      "description": "A very unique superhero to add to the MCU, bringing in some much-appreciated comedy. It manages to remain light-hearted whilst upholding some interesting action. It’s just a shame the villain’s quite boring."
     }
   ]
 }
