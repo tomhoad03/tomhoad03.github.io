@@ -12,7 +12,7 @@ function Review(title, year, score, description) {
 
 function addReview() {
     // Reads the JSON database storing reviews
-    $.getJSON("./json/reviewsDB.json", function(data) {
+    $.getJSON("client/json/reviewsDB.json", function(data) {
         for (let key in data) {
             if (data.hasOwnProperty(key)) {
                 for (let group in data[key]) {
