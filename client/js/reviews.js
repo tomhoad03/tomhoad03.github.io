@@ -10,7 +10,21 @@ function Review(title, year, score, description) {
 }
 
 function addReview() {
-    let newReview = new Review("Thor: Ragnarok", 2017, 5, "The best of the Thor films, suitable for newcomers and MCU veterans. The CGI, story and acting have definitely improved, but most of all it has comedy. A perfect prologue to Infinity War.")
+    $.getJSON("./json/reviewsDB.json", function(data) {
+        for (let review in data) {
+            if (data.hasOwnProperty(review)) {
+                for (let key in data[review]) {
+                    if (data[review].hasOwnProperty(key)) {
+                        console.log(data[review][key].title);
+                    }
+                }
+            }
+        }
+    }).fail(function(){
+        console.log("An error has occurred.");
+    });
+
+    /* let newReview = new Review("Thor: Ragnarok", 2017, 5, "The best of the Thor films, suitable for newcomers and MCU veterans. The CGI, story and acting have definitely improved, but most of all it has comedy. A perfect prologue to Infinity War.")
 
     $('.card-columns').append("<div class=\"card\">\n" +
         "                    <div class=\"card-body\">\n" +
@@ -19,5 +33,5 @@ function addReview() {
         "                        <p class=\"card-text\">" + newReview.description + "\n" +
         "                        </p>\n" +
         "                    </div>\n" +
-        "                </div>");
+        "                </div>");*/
 }

@@ -4,186 +4,43 @@
       "title": "Thor: Ragnarok",
       "year": 2017,
       "score": 5,
-      "age": "The best of the Thor films, suitable for newcomers and MCU veterans.The CGI, story and acting have definitely improved, but most of all it has comedy. A perfect prologue to Infinity War."
+      "description": "The best of the Thor films, suitable for newcomers and MCU veterans.The CGI, story and acting have definitely improved, but most of all it has comedy. A perfect prologue to Infinity War."
     },
     {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
+      "title": "21 Bridges",
+      "year": 2019,
+      "score": 3,
+      "description": "After seeing this trailer a million times in the cinema, I have finally sat down and watched it. If you like Line of Duty, then this may be interesting to you. Overall, it had good action, a good story but it’s nothing special."
     },
     {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
+      "title": "Spiderman: Homecoming",
+      "year": 2017,
+      "score": 5,
+      "description": "Just another fantastic film in phase 3. Tom Holland has to be my favourite Spiderman to date. The humour, action and characters are all perfect; it all blends into the MCU just right."
     },
     {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
+      "title": "Hamilton",
+      "year": 2020,
+      "score": 5,
+      "description": "A fantastic opportunity was taken by Disney+. It’s definitely a different experience too seeing live in the theatre, but it’s just as amazing. The original cast is perfect and Lin Manuel Miranda is incredibly talented at everything he does."
     },
     {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
+      "title": "Guardians of the Galaxy 2",
+      "year": 2017,
+      "score": 5,
+      "description": "A rewarding sequel to the first that returns with an even better soundtrack. The visuals, story and humour just get better (mostly in the second act.) Also, this film has the best character development in an MCU film ever."
     },
     {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
+      "title": "Prisoners",
+      "year": 2013,
+      "score": 5,
+      "description": "A captivating and intense detective thriller that leaves you on edge throughout. The story feels so well-thought-out that you can properly empathise with the brilliantly acted characters. It has left me completely stunned."
     },
     {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-    {
-      "title": "",
-      "year": ,
-      "score": ,
-      "age": ""
-    },
-
-
-    {
-
+      "title": "Get Hard",
+      "year": 2015,
+      "score": 3,
+      "description": "A stupid film but that’s what you get with Will Ferrel and Kevin Hart. It’s a kinda bad film, that’s kinda stupid but I had fun watching it. I wanted to see a bad comedy and I got one."
     }
   ]
-  }
+}
