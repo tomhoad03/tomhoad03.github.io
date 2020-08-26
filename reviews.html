@@ -90,8 +90,26 @@
                 </p>
             </div>
 
-            <div class="card-columns">
+            <!-- Search bar -->
+            <div class="input-group mb-3">
+                <input type="text" class="form-control">
+                <div class="input-group-append">
+                    <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown">Sort By</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item">Year</a>
+                        <a class="dropdown-item">Rating</a>
+                        <a class="dropdown-item">Random</a>
+                    </div>
+                </div>
             </div>
+
+            <!-- To do:
+            1. Spinning drop arrow
+            2. Remembers selected option
+            3. Orders card columns -->
+
+            <!-- Masonry style cards for reviews -->
+            <div class="card-columns"></div>
         </div>
 
         <!-- Provides external JS -->
