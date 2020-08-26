@@ -11,27 +11,23 @@ function Review(title, year, score, description) {
 
 function addReview() {
     $.getJSON("./json/reviewsDB.json", function(data) {
-        for (let review in data) {
-            if (data.hasOwnProperty(review)) {
-                for (let key in data[review]) {
-                    if (data[review].hasOwnProperty(key)) {
-                        console.log(data[review][key].title);
+        for (let key in data) {
+            if (data.hasOwnProperty(key)) {
+                for (let group in data[key]) {
+                    if (data[key].hasOwnProperty(group)) {
+                        let review = new Review(data[key][group].title, data[key][group].year, data[key][group].score, data[key][group].description);
+
+                        $('.card-columns').append("<div class=\"card\">\n" +
+                            "                    <div class=\"card-body\">\n" +
+                            "                        <h5 class=\"card-title\">" + review.title + " (" + review.year + ")" + "</h5>\n" +
+                            "                        <h6>" + review.scoreText() + "</h6>\n" +
+                            "                        <p class=\"card-text\">" + review.description + "\n" +
+                            "                        </p>\n" +
+                            "                    </div>\n" +
+                            "                </div>");
                     }
                 }
             }
         }
-    }).fail(function(){
-        console.log("An error has occurred.");
     });
-
-    /* let newReview = new Review("Thor: Ragnarok", 2017, 5, "The best of the Thor films, suitable for newcomers and MCU veterans. The CGI, story and acting have definitely improved, but most of all it has comedy. A perfect prologue to Infinity War.")
-
-    $('.card-columns').append("<div class=\"card\">\n" +
-        "                    <div class=\"card-body\">\n" +
-        "                        <h5 class=\"card-title\">" + newReview.title + " (" + newReview.year + ")" + "</h5>\n" +
-        "                        <h6>" + newReview.scoreText() + "</h6>\n" +
-        "                        <p class=\"card-text\">" + newReview.description + "\n" +
-        "                        </p>\n" +
-        "                    </div>\n" +
-        "                </div>");*/
 }
