@@ -17,7 +17,12 @@ function Review(title, year, score, description) {
 4. Twitter API, future reviews get added here
 5. Search function - find films easier
  */
-function addReview() {
+function addReview(sortBy) {
+    // Clears the existing reviews
+    $("#col-1").empty();
+    $("#col-2").empty();
+    $("#col-3").empty();
+
     // Reads the JSON database storing reviews
     $.getJSON("client/json/reviewsDB.json", function (json) {
         // 1 = left, 2 = mid, 3 = right
@@ -27,9 +32,17 @@ function addReview() {
             if (json.hasOwnProperty(outer)) {
                 for (let inner in json[outer]) {
                     if (json[outer].hasOwnProperty(inner)) {
+                        // Sorts the reviews
+                        if (sortBy === "year") {
+                            json[outer].sort(compareYear);
+                        } else if (sortBy === "score") {
+                            json[outer].sort(compareScore);
+                        }
+
                         // Displays the review on the webpage
                         let review = new Review(json[outer][inner].title, json[outer][inner].year, json[outer][inner].score, json[outer][inner].description);
 
+                        // Decides the row to add too
                         if (count === 3) {
                             count = 1;
                         } else {
@@ -49,5 +62,32 @@ function addReview() {
             }
         }
     });
-};
+}
 
+function compareYear(a, b) {
+    // Use toUpperCase() to ignore character casing
+    const reviewA = a.year;
+    const reviewB = b.year;
+
+    let comparison = 0;
+    if (reviewA > reviewB) {
+        comparison = 1;
+    } else if (reviewA < reviewB) {
+        comparison = -1;
+    }
+    return comparison;
+}
+
+function compareScore(a, b) {
+    // Use toUpperCase() to ignore character casing
+    const reviewA = a.score;
+    const reviewB = b.score;
+
+    let comparison = 0;
+    if (reviewA < reviewB) {
+        comparison = 1;
+    } else if (reviewA > reviewB) {
+        comparison = -1;
+    }
+    return comparison;
+}
