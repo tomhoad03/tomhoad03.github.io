@@ -17,5 +17,6 @@
     <orderEntry type="library" name="masonry-layout" level="application" />
     <orderEntry type="library" name="isotope-layout" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="colcade" level="application" />
   </component>
 </module>
