@@ -33,10 +33,14 @@ function addReview(sortBy) {
                 for (let inner in json[outer]) {
                     if (json[outer].hasOwnProperty(inner)) {
                         // Sorts the reviews
-                        if (sortBy === "year") {
-                            json[outer].sort(compareYear);
-                        } else if (sortBy === "score") {
-                            json[outer].sort(compareScore);
+                        if (sortBy === "year-desc") {
+                            json[outer].sort(compareYearDesc);
+                        } else if (sortBy === "year-asc") {
+                            json[outer].sort(compareYearAsc);
+                        } else if (sortBy === "score-desc") {
+                            json[outer].sort(compareScoreDesc);
+                        } else if (sortBy === "score-asc") {
+                            json[outer].sort(compareScoreAsc);
                         }
 
                         // Displays the review on the webpage
@@ -64,8 +68,22 @@ function addReview(sortBy) {
     });
 }
 
-function compareYear(a, b) {
-    // Use toUpperCase() to ignore character casing
+// Sorts by year newest to oldest
+function compareYearDesc(a, b) {
+    const reviewA = a.year;
+    const reviewB = b.year;
+
+    let comparison = 0;
+    if (reviewA < reviewB) {
+        comparison = 1;
+    } else if (reviewA > reviewB) {
+        comparison = -1;
+    }
+    return comparison;
+}
+
+// Sorts by year oldest to newest
+function compareYearAsc(a, b) {
     const reviewA = a.year;
     const reviewB = b.year;
 
@@ -78,8 +96,8 @@ function compareYear(a, b) {
     return comparison;
 }
 
-function compareScore(a, b) {
-    // Use toUpperCase() to ignore character casing
+// Sorts by score best to worst
+function compareScoreDesc(a, b) {
     const reviewA = a.score;
     const reviewB = b.score;
 
@@ -92,7 +110,26 @@ function compareScore(a, b) {
     return comparison;
 }
 
+// Sorts by score worst to best
+function compareScoreAsc(a, b) {
+    const reviewA = a.score;
+    const reviewB = b.score;
+
+    let comparison = 0;
+    if (reviewA > reviewB) {
+        comparison = 1;
+    } else if (reviewA < reviewB) {
+        comparison = -1;
+    }
+    return comparison;
+}
+
+// Displays active and sorts reviews
 $(".sort-item").click(function () {
-    $(this).parent().children().removeClass("active");
-    $(this).addClass("active");
+    if (!$(this).hasClass("active")) {
+        $(this).parent().children().removeClass("active");
+        $(this).addClass("active");
+
+        addReview($(this).val());
+    }
 })

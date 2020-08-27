@@ -101,9 +101,11 @@
                 <div class="input-group-append">
                     <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown">Sort By</button>
                     <div class="dropdown-menu">
-                        <button class="dropdown-item sort-item" onclick="addReview()">Default</button>
-                        <button class="dropdown-item sort-item" onclick="addReview('year')">Year</button>
-                        <button class="dropdown-item sort-item" onclick="addReview('score')">Score</button>
+                        <button class="dropdown-item sort-item" value="">Default</button>
+                        <button class="dropdown-item sort-item" value="year-desc">Newest To Oldest</button>
+                        <button class="dropdown-item sort-item" value="year-asc">Oldest To Newest</button>
+                        <button class="dropdown-item sort-item" value="score-desc">Best To Worst</button>
+                        <button class="dropdown-item sort-item" value="score-asc">Worst To Best</button>
                     </div>
                 </div>
             </div>
