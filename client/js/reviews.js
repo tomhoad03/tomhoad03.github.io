@@ -91,3 +91,8 @@ function compareScore(a, b) {
     }
     return comparison;
 }
+
+$(".sort-item").click(function () {
+    $(this).parent().children().removeClass("active");
+    $(this).addClass("active");
+})
