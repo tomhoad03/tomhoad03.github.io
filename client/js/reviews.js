@@ -19,14 +19,15 @@ function Review(title, year, score, description) {
  */
 function addReview() {
     // Reads the JSON database storing reviews
-    $.getJSON("client/json/reviewsDB.json", function (data) {
-        for (let key in data) {
-            if (data.hasOwnProperty(key)) {
+    $.getJSON("client/json/reviewsDB.json", function (json) {
+        for (let outer in json) {
+            if (json.hasOwnProperty(outer)) {
 
-                for (let group in data[key]) {
-                    if (data[key].hasOwnProperty(group)) {
+                for (let inner in json[outer]) {
+                    if (json[outer].hasOwnProperty(inner)) {
                         // Displays the review on the webpage
-                        let review = new Review(data[key][group].title, data[key][group].year, data[key][group].score, data[key][group].description);
+                        let review = new Review(json[outer][inner].title, json[outer][inner].year, json[outer][inner].score, json[outer][inner].description);
+
                         $('.card-columns').append("<div class=\"card shadow\">\n" +
                             "                    <div class=\"card-body\">\n" +
                             "                        <h5 class=\"card-title\">" + review.title + " (" + review.year + ")" + "</h5>\n" +
@@ -41,3 +42,15 @@ function addReview() {
         }
     });
 }
+
+$(document).ready(function () {
+    $(".grid").isotope({
+        itemSelector: '.grid-item',
+        masonry: {
+            columnWidth: '.grid-item',
+            horizontalOrder: true,
+            layoutMode: 'fitRows'
+        }
+    });
+});
+
