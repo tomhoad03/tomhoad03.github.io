@@ -8,18 +8,13 @@
             #reviews * {
                 display: inline-block;
             }
-            #reviews-icon {
-                margin-left: 20px;
-                font-size: 40px;
-                color: #343a40;
-            }
-            #reviews-icon:hover {
-                text-shadow: 0 0 6px #b8b8b8;
-            }
             .grid {
                 display: grid;
                 grid-template-columns: repeat(3, minmax(0, 1fr));
                 grid-column-gap: 20px;
+            }
+            .dropdown-toggle {
+                color: var(--bg-color);
             }
         </style>
 
@@ -65,7 +60,6 @@
                             <a class="nav-item nav-link" href="https://open.spotify.com/user/11153837184?si=dpGKiog9T4eKVrg1K94D6A">
                                 <i class="fa fa-spotify mr-1"></i>
                             </a>
-                            <button id="download-button" class="btn btn-outline-light ml-3">Download</button>
                         </div>
                     </div>
                 </div>
@@ -77,7 +71,7 @@
             <div class="jumbotron bg-white shadow">
                 <div id="reviews">
                     <h1>Film Reviews</h1>
-                    <a id="reviews-icon" href="https://twitter.com/tom_hoad03">
+                    <a class="link-icon" href="https://twitter.com/tom_hoad03">
                         <i class="fa fa-twitter mr-1"></i>
                     </a>
                 </div>
@@ -99,7 +93,7 @@
             <div class="input-group mb-3">
                 <input type="text" class="form-control">
                 <div class="input-group-append">
-                    <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown">Sort By</button>
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Sort By</button>
                     <div class="dropdown-menu">
                         <button class="dropdown-item sort-item" value="">Default</button>
                         <button class="dropdown-item sort-item" value="year-desc">Newest To Oldest</button>

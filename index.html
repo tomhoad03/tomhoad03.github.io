@@ -3,13 +3,28 @@
     <head>
         <title>Homepage</title>
 
+        <!-- Provides internal CSS -->
+        <style>
+            .jumbotron-image {
+                margin-bottom: 0 !important;
+                text-transform: capitalize;
+                text-align: center;
+
+                background-position: center;
+                background-size: cover;
+            }
+
+            .page-scroll{
+                height:2500px;
+            }
+        </style>
+
         <!-- Provides external CSS -->
         <link rel="stylesheet" type="text/css" href="client/css/layout.css">
-        <link rel="stylesheet" type="text/css" href="client/css/index.css">
 
-        <!-- Provides Bootstrap CSS -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- Provides Bootstrap and font CSS -->
+        <link rel="stylesheet" href="https://use.typekit.net/opg8cqi.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
@@ -46,7 +61,6 @@
                             <a class="nav-item nav-link" href="https://open.spotify.com/user/11153837184?si=dpGKiog9T4eKVrg1K94D6A">
                                 <i class="fa fa-spotify mr-1"></i>
                             </a>
-                            <button id="download-button" class="btn btn-outline-light ml-3">Download</button>
                         </div>
                     </div>
                 </div>
@@ -66,10 +80,11 @@
                     </div>
 
                     <!-- Information about my programming -->
-                    <div class="carousel-item">
+                    <div class="carousel-item" href="programming.html">
                         <div class="jumbotron jumbotron-image bg-dark text-white" style="background-image: url(./client/img/solstice.jpg)">
                             <h1 class="display-4">Programming</h1>
                             <p class="lead">Computer science at university</p>
+                            <a href="programming.html" class="stretched-link"></a>
                         </div>
                     </div>
 
@@ -78,6 +93,7 @@
                         <div class="jumbotron jumbotron-image bg-dark text-white" style="background-image: url(./client/img/europa.jpg)">
                             <h1 class="display-4">YouTube</h1>
                             <p class="lead">Video gaming and coronavirus</p>
+                            <a href="youtube.html" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>

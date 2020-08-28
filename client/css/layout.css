@@ -1,16 +1,19 @@
 /* Custom font */
 html * {
-    font-family: 'Open Sans', sans-serif; !important;
+        font-family: 'Open Sans', sans-serif; !important;
+    --bg-color: #4285F4;
+    --accent-color: #F8F9FA;
+    --shadow-color: #B8B8B8;
 }
 
 /* Navbar customisation */
 .navbar {
     transition: background-color 0.4s;
-    background-color: #343a40;
+    background-color: var(--bg-color);
     height: 78px;
 }
 #webpage-links * {
-    color: #f8f9fa;
+    color: var(--accent-color);
     opacity: 50%;
 }
 .nav-link{
@@ -22,7 +25,7 @@ html * {
     bottom: 0;
     height: 3px;
     position: absolute;
-    background-color: #f8f9fa;
+    background-color: var(--accent-color);
     transition: width .15s ease-out;
 }
 .nav-link:before {
@@ -39,19 +42,10 @@ html * {
 }
 
 .navbar-brand {
-    color: #f8f9fa;
+    color: var(--accent-color);
 }
 #social-icons * {
-    color: #f8f9fa;
-}
-#download-button {
-    color: #f8f9fa;
-    border-color: #f8f9fa;
-}
-#download-button:hover {
-    color: #343a40;
-    border-color: #f8f9fa;
-    background-color: #f8f9fa;
+    color: var(--accent-color);
 }
 
 /* Custom scrollbar */
@@ -59,8 +53,18 @@ body::-webkit-scrollbar {
     width: 0.3rem;
 }
 body::-webkit-scrollbar-track {
-    background: #343a40;
+    background: var(--bg-color);
 }
 body::-webkit-scrollbar-thumb {
-    background: #f8f9fa;
+    background: var(--accent-color);
+}
+
+/* Social icon links */
+.link-icon {
+    margin-left: 20px;
+    font-size: 40px;
+    color: var(--bg-color);
+}
+.link-icon:hover {
+    text-shadow: 0 0 6px var(--shadow-color);
 }

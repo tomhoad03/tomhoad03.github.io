@@ -54,7 +54,7 @@ function addReview(sortBy) {
                         }
 
                         $("#col-" + count).append("<div class=\"card shadow mb-3\">\n" +
-                            "                    <div class=\"card-body\">\n" +
+                            "                      <div class=\"card-body\">\n" +
                             "                        <h5 class=\"card-title\">" + review.title + " (" + review.year + ")" + "</h5>\n" +
                             "                        <h6>" + review.scoreText() + "</h6>\n" +
                             "                        <p class=\"card-text\">" + review.description + "\n" +

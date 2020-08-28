@@ -5,32 +5,20 @@ window.onscroll = function() {
 
 // Change navbar when scrolling
 function scrollFunction() {
-    let navbarBtn = $("#download-button");
-    let navbarBtnHover = $("#download-button:hover");
+    let bgColor = "#4285F4";
+    let accentColor = "#F8F9FA";
 
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         // What the navbar changes too.
-        $(".navbar").css("background-color", "#f8f9fa");
-        $("#webpage-links *").css("color", "#343a40");
-        $(".navbar-brand").css("color", "#343a40");
-        $("#social-icons *").css("color", "#343a40");
-
-        navbarBtn.css("color", "#343a40");
-        navbarBtn.css("border-color", "#343a40");
-        navbarBtnHover.css("color", "#f8f9fa");
-        navbarBtnHover.css("background-color", "#343a40");
-        navbarBtnHover.css("border-color", "#343a40");
+        $(".navbar").css("background-color", accentColor);
+        $("#webpage-links *").css("color", bgColor);
+        $(".navbar-brand").css("color", bgColor);
+        $("#social-icons *").css("color", bgColor);
     } else {
         // When the navbar is at the top
-        $(".navbar").css("background-color", "#343a40");
-        $("#webpage-links *").css("color", "#f8f9fa");
-        $(".navbar-brand").css("color", "#f8f9fa");
-        $("#social-icons *").css("color", "#f8f9fa");
-
-        navbarBtn.css("color", "#f8f9fa");
-        navbarBtn.css("border-color", "#f8f9fa");
-        navbarBtnHover.css("color", "#343a40");
-        navbarBtnHover.css("background-color", "#f8f9fa");
-        navbarBtnHover.css("border-color", "#f8f9fa");
+        $(".navbar").css("background-color", bgColor);
+        $("#webpage-links *").css("color", accentColor);
+        $(".navbar-brand").css("color", accentColor);
+        $("#social-icons *").css("color", accentColor);
     }
 }
