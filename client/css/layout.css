@@ -1,20 +1,32 @@
-/* Custom font */
+/* Font and colours */
 html * {
     font-family: muli, sans-serif; !important;
-    --bg-color: #4285F4;
-    --accent-color: #F8F9FA;
+
+    --primary-color: #007BFF;
+    --secondary-color: #3FB3FB;
+    --bg-color: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+
+    --accent-color: #F8F8F8;
     --shadow-color: #B8B8B8;
 }
 
-/* Navbar customisation */
+/* Navbar */
 .navbar {
     transition: background-color 0.4s;
-    background: linear-gradient(to right, #0062E6, #33AEFF);
+    background: var(--bg-color);
     height: 78px;
+}
+.active {
+    opacity: 100%;
+}
+.inactive {
+    opacity: 60%;
+}
+.disabled {
+    opacity: 30%;
 }
 #webpage-links * {
     color: var(--accent-color);
-    opacity: 50%;
 }
 #social-icons * {
     color: var(--accent-color);
@@ -22,6 +34,8 @@ html * {
 .navbar-brand {
     color: var(--accent-color);
 }
+
+/* Navbar item hover */
 .nav-link{
     position: relative;
 }
@@ -47,30 +61,39 @@ html * {
     transition-duration: .15s;
 }
 
-/* Custom scrollbar */
+/* Scrollbar */
 body::-webkit-scrollbar {
     width: 0.3rem;
 }
 body::-webkit-scrollbar-track {
-    background: var(--bg-color);
+    background: var(--secondary-color);
 }
 body::-webkit-scrollbar-thumb {
     background: var(--accent-color);
+}
+.page-scroll{
+    height:2500px;
 }
 
 /* Social icon links */
 .link-icon {
     margin-left: 20px;
     font-size: 40px;
-    color: var(--bg-color);
+    color: var(--primary-color);
 }
 .link-icon:hover {
     text-shadow: 0 0 6px var(--shadow-color);
 }
 
-/* Footer customisation */
+/* Footer */
 .footer {
     background-color: var(--accent-color);
-    width: 100%;
-    bottom: 0;
+}
+
+/* Elements on multiple pages */
+.jumbotron-intro * {
+    display: inline-block;
+}
+.main {
+    margin-top: 110px
 }

@@ -5,9 +5,6 @@
 
         <!-- Provides internal CSS -->
         <style>
-            #reviews * {
-                display: inline-block;
-            }
             .grid {
                 display: grid;
                 grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -37,10 +34,10 @@
                     <!-- Displays links to other webpages -->
                     <div class="collapse navbar-collapse justify-content-between">
                         <div id="webpage-links" class="navbar-nav">
-                            <a id="link-programming" class="nav-item nav-link" href="programming.html">Programming</a>
-                            <a id="link-reviews" class="nav-item nav-link" href="reviews.html">Film Reviews</a>
-                            <a id="link-youtube" class="nav-item nav-link" href="youtube.html">YouTube</a>
-                            <a id="link-spotify" class="nav-item nav-link" href="spotify.html">Spotify</a>
+                            <a id="link-programming" class="nav-item nav-link inactive" href="programming.html">Programming</a>
+                            <a id="link-reviews" class="nav-item nav-link active" href="reviews.html">Film Reviews</a>
+                            <a id="link-youtube" class="nav-item nav-link inactive" href="youtube.html">YouTube</a>
+                            <a id="link-spotify" class="nav-item nav-link inactive" href="spotify.html">Spotify</a>
                             <a id="link-gaming" class="nav-item nav-link disabled" href="#">Gaming</a>
                         </div>
 
@@ -66,12 +63,12 @@
             </nav>
         </header>
 
-        <div id="reviews-main" class="container mb-4" style="margin-top: 110px">
-            <!-- Introduction to the channel -->
+        <div class="container main mb-4">
+            <!-- Introduction to my film reviews -->
             <div class="jumbotron bg-white shadow">
-                <div id="reviews">
+                <div class="jumbotron-intro">
                     <h1>Film Reviews</h1>
-                    <a class="link-icon" href="https://twitter.com/tom_hoad03">
+                    <a class="link-icon" href="https://twitter.com/tom_hoad03" target="_blank">
                         <i class="fa fa-twitter mr-1"></i>
                     </a>
                 </div>
@@ -130,7 +127,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
         <!-- Provides external JS -->
-        <script type="text/javascript" src="client/js/layout.js"></script>
         <script type="text/javascript" src="client/js/reviews.js"></script>
     </body>
 </html>
