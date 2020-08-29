@@ -1,6 +1,6 @@
 /* Custom font */
 html * {
-        font-family: 'Open Sans', sans-serif; !important;
+    font-family: muli, sans-serif; !important;
     --bg-color: #4285F4;
     --accent-color: #F8F9FA;
     --shadow-color: #B8B8B8;
