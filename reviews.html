@@ -10,8 +10,9 @@
                 grid-template-columns: repeat(3, minmax(0, 1fr));
                 grid-column-gap: 20px;
             }
-            .dropdown-toggle {
-                color: var(--bg-color);
+            #dropdown-btn {
+                background-color: var(--primary-color);
+                color: var(--accent-color);
             }
         </style>
 
@@ -44,18 +45,18 @@
                         <!-- Displays links to other platforms -->
                         <div id="social-icons" class="navbar-nav">
                             <a class="nav-item nav-link" href="https://github.com/tomhoad03">
-                                <i class="fa fa-github mr-1"></i>
+                                <i class="fa fa-github mr-1"> </i>
                             </a>
                             <a class="nav-item nav-link" href="https://www.linkedin.com/in/tom-hoad-a99b42194/">
-                                <i class="fa fa-linkedin mr-1"></i>
+                                <i class="fa fa-linkedin mr-1"> </i>
                             </a><a class="nav-item nav-link" href="https://twitter.com/tom_hoad03">
-                            <i class="fa fa-twitter mr-1"></i>
+                            <i class="fa fa-twitter mr-1"> </i>
                         </a>
                             <a class="nav-item nav-link" href="https://www.youtube.com/channel/UC9GUBApYcTEs_Auzwp2ja6Q">
-                                <i class="fa fa-youtube-play mr-1"></i>
+                                <i class="fa fa-youtube-play mr-1"> </i>
                             </a>
                             <a class="nav-item nav-link" href="https://open.spotify.com/user/11153837184?si=dpGKiog9T4eKVrg1K94D6A">
-                                <i class="fa fa-spotify mr-1"></i>
+                                <i class="fa fa-spotify mr-1"> </i>
                             </a>
                         </div>
                     </div>
@@ -69,7 +70,7 @@
                 <div class="jumbotron-intro">
                     <h1>Film Reviews</h1>
                     <a class="link-icon" href="https://twitter.com/tom_hoad03" target="_blank">
-                        <i class="fa fa-twitter mr-1"></i>
+                        <i class="fa fa-twitter mr-1"> </i>
                     </a>
                 </div>
                 <hr>
@@ -88,16 +89,14 @@
 
             <!-- Search bar -->
             <div class="input-group mb-3">
-                <input type="text" class="form-control">
-                <div class="input-group-append">
-                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Sort By</button>
-                    <div class="dropdown-menu">
-                        <button class="dropdown-item sort-item" value="">Default</button>
-                        <button class="dropdown-item sort-item" value="year-desc">Newest To Oldest</button>
-                        <button class="dropdown-item sort-item" value="year-asc">Oldest To Newest</button>
-                        <button class="dropdown-item sort-item" value="score-desc">Best To Worst</button>
-                        <button class="dropdown-item sort-item" value="score-asc">Worst To Best</button>
-                    </div>
+                <input class="form-control" type="text" placeholder="Search">
+                <button id="dropdown-btn" class="btn dropdown-toggle" type="button" data-toggle="dropdown">Sort By</button>
+                <div class="dropdown-menu">
+                    <button class="dropdown-item sort-item" value="">Default</button>
+                    <button class="dropdown-item sort-item" value="year-desc">Newest To Oldest</button>
+                    <button class="dropdown-item sort-item" value="year-asc">Oldest To Newest</button>
+                    <button class="dropdown-item sort-item" value="score-desc">Best To Worst</button>
+                    <button class="dropdown-item sort-item" value="score-asc">Worst To Best</button>
                 </div>
             </div>
 
