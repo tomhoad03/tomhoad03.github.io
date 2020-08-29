@@ -9,12 +9,18 @@ html * {
 /* Navbar customisation */
 .navbar {
     transition: background-color 0.4s;
-    background-color: var(--bg-color);
+    background: linear-gradient(to right, #0062E6, #33AEFF);
     height: 78px;
 }
 #webpage-links * {
     color: var(--accent-color);
     opacity: 50%;
+}
+#social-icons * {
+    color: var(--accent-color);
+}
+.navbar-brand {
+    color: var(--accent-color);
 }
 .nav-link{
     position: relative;
@@ -41,13 +47,6 @@ html * {
     transition-duration: .15s;
 }
 
-.navbar-brand {
-    color: var(--accent-color);
-}
-#social-icons * {
-    color: var(--accent-color);
-}
-
 /* Custom scrollbar */
 body::-webkit-scrollbar {
     width: 0.3rem;
@@ -67,4 +66,11 @@ body::-webkit-scrollbar-thumb {
 }
 .link-icon:hover {
     text-shadow: 0 0 6px var(--shadow-color);
+}
+
+/* Footer customisation */
+.footer {
+    background-color: var(--accent-color);
+    width: 100%;
+    bottom: 0;
 }

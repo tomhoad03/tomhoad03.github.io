@@ -1,3 +1,4 @@
+/*
 // Runs on scroll
 window.onscroll = function() {
     scrollFunction()
@@ -22,3 +23,4 @@ function scrollFunction() {
         $("#social-icons *").css("color", accentColor);
     }
 }
+*/
