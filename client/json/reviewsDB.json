@@ -1,6 +1,48 @@
 {
   "reviews": [
     {
+      "title": "The Gentlemen",
+      "year": 2019,
+      "score": 5,
+      "description": "A gangster film with a hilarious posh twist. The story is told in a very refreshing way and the characters suit the film perfectly. 2 hours of accents, swearing and fun."
+    },
+    {
+      "title": "Tenet",
+      "year": 2020,
+      "score": 5,
+      "description": "It is so good to be back in a cinema. Restrictions aside, the big screen really does this film justice. An absolute spectacle that delivers on Nolan's skills to confuse and amaze."
+    },
+    {
+      "title": "Interstellar",
+      "year": 2014,
+      "score": 5,
+      "description": "Christopher Nolan is an outstanding filmmaker. It's a sci-fi film on a whole different level. It's accompanied by a beautiful score; Hans Zimmer never disappoints. This has just made me even more excited to see Tenet."
+    },
+    {
+      "title": "Avengers: Endgame",
+      "year": 2019,
+      "score": 5,
+      "description": "An iconic film of my generation. Getting to see this in the cinema was a surreal experience. The build up of the previous stories really paid off in a fitting conclusion, yet open ended enough for a bright future."
+    },
+    {
+      "title": "Knives Out",
+      "year": 2019,
+      "score": 5,
+      "description": "The cinematic version of a family game of Cluedo. There's a lot of talented people that went into making this film and it really shows. Now available on Amazon Prime, it's a must watch."
+    },
+    {
+      "title": "Pride & Prejudice & Zombies",
+      "year": 2016,
+      "score": 5,
+      "description": "Not a film of quality but made for a brilliant practical joke as a 50th birthday present. If you want to annoy someone who enjoys books, especially if the have done a degree in English, then this is the film to put them through."
+    },
+    {
+      "title": "Black K Klansman",
+      "year": 2018,
+      "score": 5,
+      "description": "I'm gonna make a few exceptions and review films that I believe are a must-see. This one has recently arrived on Netflix and has a lot of weight due to recent events. It's a shocking true story that everyone should see given the chance."
+    },
+    {
       "title": "Thor: Ragnarok",
       "year": 2017,
       "score": 5,
