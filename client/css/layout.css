@@ -95,5 +95,9 @@ body::-webkit-scrollbar-thumb {
     display: inline-block;
 }
 .main {
-    margin-top: 110px
+    margin-top: 110px;
 }
+iframe * {
+    border:none;
+}
+
