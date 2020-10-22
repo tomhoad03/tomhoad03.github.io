@@ -1,6 +1,6 @@
 /* Font and colours */
 html * {
-    font-family: muli, sans-serif; !important;
+    font-family: muli, sans-serif;
 
     --primary-color: #007BFF;
     --secondary-color: #3FB3FB;
@@ -8,8 +8,6 @@ html * {
 
     --accent-color: #F8F8F8;
     --shadow-color: #B8B8B8;
-
-    scroll-behavior: smooth;
 }
 
 /* Navbar */

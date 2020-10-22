@@ -31,6 +31,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <!-- Provides external JS -->
+        <script type="text/javascript" src="client/js/index.js"></script>
 
         <!-- Provides Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -90,7 +92,7 @@
                         <div class="jumbotron jumbotron-image bg-dark text-white" style="background-image: url(./client/img/pyramid.jpg)">
                             <h1 class="display-4">About Me</h1>
                             <p class="lead">My portfolio</p>
-                            <a href="#aboutMe" class="stretched-link"> </a>
+                            <a onclick="scrollDown()" class="stretched-link"> </a>
                         </div>
                     </div>
 
@@ -125,6 +127,10 @@
             </div>
 
             <hr id="aboutMe">
+
+            <p>
+                Hi! My name is Tom Hoad and I'm a computer science student at Southampton University.
+            </p>
         </div>
 
         <div class="page-scroll"></div>
