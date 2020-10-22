@@ -8,6 +8,8 @@ html * {
 
     --accent-color: #F8F8F8;
     --shadow-color: #B8B8B8;
+
+    scroll-behavior: smooth;
 }
 
 /* Navbar */
