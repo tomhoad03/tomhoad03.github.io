@@ -1,5 +1,5 @@
 function scrollDown() {
     let element = document.querySelector("#aboutMe");
 
-    element.scrollIntoView();
+    element.scrollIntoView({behavior: 'smooth'});
 }
