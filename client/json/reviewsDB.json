@@ -1,6 +1,48 @@
 {
   "reviews": [
     {
+      "title": "WandaVision",
+      "year": 2021,
+      "score": 5,
+      "description": "A fantastic start to phase 4 of the MCU. Its good to see Marvel willing to try something new even if you needed to see everything before this to understand it. At this point of lockdown, I'm just glad to watch something new."
+    },
+    {
+      "title": "The Queen's Gambit",
+      "year": 2020,
+      "score": 5,
+      "description": "This show alone is worth a Netflix subscription. Such a simple idea turned into easily the best show of last year. Is it going to be cool to play Chess from now on?"
+    },
+    {
+      "title": "Last Christmas",
+      "year": 2019,
+      "score": 5,
+      "description": "An honourable mention on my top 5 Christmas films list. Its so hard to describe it without telling Avengers level spoilers. My only advice is to enjoy the comedy and the soundtrack when you can. Warning! This is the worst film (subjectivley) to watch with someone on a date."
+    },
+    {
+      "title": "Mandalorian",
+      "year": 2020,
+      "score": 5,
+      "description": "I think this will become one of my favourite shows of all time. S2 really embraced the Star Wars universe and gave us some \"Rogue One\" like moments. With a finale like that, you don't even need a S3."
+    },
+    {
+      "title": "Spiderman: Into the Spider Verse",
+      "year": 2018,
+      "score": 5,
+      "description": "Even from the opening credits you know it's gonna be amazing. The unique artistic style and refreshing story makes this the best spiderman film of all time. After a decade of superhero films, this one will be remembered."
+    },
+    {
+      "title": "Uncut Gems",
+      "year": 2019,
+      "score": 5,
+      "description": "A wild ride of a film that tells a chaotic yet intriguing story. If you've ever wondered why Adam Sandler is in so many films, the man can act, and this is living proof of it."
+    },
+    {
+      "title": "1917",
+      "year": 2019,
+      "score": 5,
+      "description": "What a powerful war story. So many parts of this film have been so carefully done, and it really shows. A brilliant mix of new and old actors that pull off a one take wonder."
+    },
+    {
       "title": "The Gentlemen",
       "year": 2019,
       "score": 5,
