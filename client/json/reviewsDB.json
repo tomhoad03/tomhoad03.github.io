@@ -1,6 +1,18 @@
 {
   "reviews": [
     {
+      "title": "Community",
+      "year": 2015,
+      "score": 5,
+      "description": "Why has it taken me so long to get round to watching this show? There is something so comforting about properly watching episodes after having seen only YouTube clips for years and years"
+    },
+    {
+      "title": "Justice League",
+      "year": 2021,
+      "score": 5,
+      "description": "This has to be one of the greatest superhero films of all time. There is no denying that this film was worth the wait. Despite its incredibly long run time, every act felt very meaningful. Long live the SnyderCut."
+    },
+    {
       "title": "WandaVision",
       "year": 2021,
       "score": 5,
