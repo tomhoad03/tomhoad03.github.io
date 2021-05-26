@@ -133,3 +133,8 @@ $(".sort-item").click(function () {
         addReview($(this).val());
     }
 })
+
+// Searches through reviews
+$(".search-btn").change(function () {
+
+})

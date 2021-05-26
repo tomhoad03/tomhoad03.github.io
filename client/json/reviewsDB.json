@@ -1,10 +1,22 @@
 {
   "reviews": [
     {
+      "title": "Sound of Metal",
+      "year": 2021,
+      "score": 5,
+      "description": "Such an incredible story with so much attention to detail. The extremes in noise really suit the big screen experience and it was so good to be back in cinemas again. If you like Whiplash, you will love this film."
+    },
+    {
+      "title": "Breaking Bad",
+      "year": 2013,
+      "score": 5,
+      "description": "Everyone knows that Breaking Bad is one of, if not the best TV show of all time. The story building from the first episode of Better Call Saul to the finale of Breaking Bad and El Camino has to be one of the greatest achievements of modern media."
+    },
+    {
       "title": "Community",
       "year": 2015,
       "score": 5,
-      "description": "Why has it taken me so long to get round to watching this show? There is something so comforting about properly watching episodes after having seen only YouTube clips for years and years"
+      "description": "Why has it taken me so long to get round to watching this show? There is something so comforting about properly watching episodes after having seen only YouTube clips for years and years."
     },
     {
       "title": "Justice League",

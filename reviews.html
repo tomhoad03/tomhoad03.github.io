@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
     <head>
         <title>Film Reviews</title>
         <link rel="icon" href="client/img/icon.png">
@@ -11,7 +11,15 @@
                 grid-template-columns: repeat(3, minmax(0, 1fr));
                 grid-column-gap: 20px;
             }
+            #search-btn {
+                background-color: var(--primary-color);
+                color: var(--accent-color);
+            }
             #dropdown-btn {
+                background-color: var(--primary-color);
+                color: var(--accent-color);
+            }
+            #letterbox-btn {
                 background-color: var(--primary-color);
                 color: var(--accent-color);
             }
@@ -68,6 +76,9 @@
                             <a class="nav-item nav-link" href="https://open.spotify.com/user/11153837184?si=dpGKiog9T4eKVrg1K94D6A">
                                 <i class="fa fa-spotify mr-1"> </i>
                             </a>
+                            <a class="nav-item nav-link" href="https://letterboxd.com/tomhoad03/">
+                                <i class="fa fa-film mr-1"> </i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -77,14 +88,21 @@
         <div class="container main mb-4">
             <!-- Search bar -->
             <div class="input-group mb-3">
-                <input class="form-control disabled" type="text" placeholder="Search">
-                <button id="dropdown-btn" class="btn dropdown-toggle" type="button" data-toggle="dropdown">Sort By</button>
-                <div class="dropdown-menu">
-                    <button class="dropdown-item sort-item" value="">Default</button>
-                    <button class="dropdown-item sort-item" value="year-desc">Newest To Oldest</button>
-                    <button class="dropdown-item sort-item" value="year-asc">Oldest To Newest</button>
-                    <button class="dropdown-item sort-item" value="score-desc">Best To Worst</button>
-                    <button class="dropdown-item sort-item" value="score-asc">Worst To Best</button>
+                <input class="form-control disabled search-btn" type="text" placeholder="Search">
+
+                <div class="btn-group" role="group">
+                    <button id="search-btn" class="btn" type="button" data-toggle="dropdown">Search</button>
+                    <input type="button" id="letterbox-btn" class="btn" onclick="location.href = 'https://letterboxd.com/tomhoad03/'" value="See All Reviews"/>
+
+                    <button id="dropdown-btn" class="btn dropdown-toggle" type="button" data-toggle="dropdown">Sort By</button>
+
+                    <div class="dropdown-menu">
+                        <button class="dropdown-item sort-item" value="">Default</button>
+                        <button class="dropdown-item sort-item" value="year-desc">Newest To Oldest</button>
+                        <button class="dropdown-item sort-item" value="year-asc">Oldest To Newest</button>
+                        <button class="dropdown-item sort-item" value="score-desc">Best To Worst</button>
+                        <button class="dropdown-item sort-item" value="score-asc">Worst To Best</button>
+                    </div>
                 </div>
             </div>
 
