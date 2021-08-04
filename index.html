@@ -4,25 +4,6 @@
         <title>Homepage</title>
         <link rel="icon" href="client/img/icon.png">
 
-        <!-- Provides internal CSS -->
-        <style>
-            .jumbotron-image {
-                margin-bottom: 0 !important;
-                text-transform: capitalize;
-                text-align: center;
-                color: var(--accent-color);
-
-                background-position: center;
-                background-size: cover;
-            }
-            .jumbotron-image h1 {
-                color: var(--accent-color);
-            }
-            .jumbotron-image p {
-                color: var(--accent-color);
-            }
-        </style>
-
         <!-- Provides external CSS -->
         <link rel="stylesheet" type="text/css" href="client/css/layout.css">
 
@@ -37,16 +18,17 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
 
-    <body>
+    <body id="cover">
         <header id="header">
             <!-- Displays a navbar at the top of the page -->
-            <nav class="navbar navbar-expand fixed-top scrolling-navbar shadow">
+            <nav class="navbar navbar-expand fixed-top scrolling-navbar">
                 <div id="navbar" class="container">
-                    <a class="navbar-brand" href="index.html">Tom Hoad</a>
 
                     <!-- Displays links to other webpages -->
                     <div class="collapse navbar-collapse justify-content-between">
                         <div id="webpage-links" class="navbar-nav">
+                            <a id="link-index" class="nav-item nav-link inactive" href="index.html">Home</a>
+                            <a id="link-portfolio" class="nav-item nav-link disabled" href="portfolio.html">Portfolio</a>
                             <a id="link-programming" class="nav-item nav-link inactive" href="programming.html">Programming</a>
                             <a id="link-reviews" class="nav-item nav-link inactive" href="reviews.html">Film Reviews</a>
                             <a id="link-spotify" class="nav-item nav-link inactive" href="spotify.html">Spotify</a>
@@ -83,69 +65,9 @@
             </nav>
         </header>
 
-        <div class="container main mb-4">
-            <hr>
-
-            <!-- Provides a carousel view of top pages -->
-            <div id="carousel" class="carousel slide shadow-lg" data-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- Information about me -->
-                    <div class="carousel-item active" href=".page-scroll">
-                        <div class="jumbotron jumbotron-image bg-dark text-white" style="background-image: url(./client/img/java.jpg)">
-                            <h1 class="display-4">About Me</h1>
-                            <p class="lead">Portfolio</p>
-                            <a onmouseover="" style="cursor: pointer;" class="stretched-link"> </a> <!--onclick="scrollDown()"-->
-                        </div>
-                    </div>
-
-                    <!-- Information about my programming -->
-                    <div class="carousel-item" href="programming.html">
-                        <div class="jumbotron jumbotron-image bg-dark text-white" style="background-image: url(./client/img/lambda.jpg)">
-                            <h1 class="display-4">Programming</h1>
-                            <p class="lead">Computer Science</p>
-                            <a href="programming.html" class="stretched-link"> </a>
-                        </div>
-                    </div>
-
-                    <!-- Information about my youtube -->
-                    <div class="carousel-item">
-                        <div class="jumbotron jumbotron-image bg-dark text-white" style="background-image: url(./client/img/html.jpg)">
-                            <h1 class="display-4">YouTube</h1>
-                            <p class="lead">Video Gaming</p>
-                            <a href="youtube.html" class="stretched-link"> </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Carousel buttons -->
-                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon"> </span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon"> </span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
--
-            <hr id="aboutLine">
+        <div>
+            <p></p>
         </div>
-            <!--
-            1. Add about me section on homepage
-            2. Film reviews search function
-            3. Tidy up youtube and spotify webpages / improved embedded features
-            4. Add gaming webpage (screenshots, achievements, play time etc.)
-            5. Improve scalability / mobile friendly design
-            6. Design website icon (currently placeholder IntelliJ image)
-            -->
-        <div class="page-scroll"></div>
-
-        <!-- Displays a footer at the bottom of the page -->
-        <footer class="footer mt-auto py-3">
-            <div class="container">
-                <span class="text-muted">Footer Content</span>
-            </div>
-        </footer>
 
         <!-- Provides external JS -->
         <script type="text/javascript" src="client/js/index.js"></script>

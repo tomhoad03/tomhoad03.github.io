@@ -10,6 +10,11 @@ html * {
     --shadow-color: #B8B8B8;
 }
 
+/* Cover */
+#cover {
+    background: var(--bg-color);
+}
+
 /* Navbar */
 .navbar {
     transition: background-color 0.4s;
@@ -71,8 +76,8 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background: var(--accent-color);
 }
-.page-scroll{
-    height:2500px;
+.page-scroll {
+    height: 2500px;
 }
 
 /* Social icon links */
