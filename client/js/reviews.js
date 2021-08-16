@@ -18,10 +18,10 @@ function Review(title, year, score, description) {
 5. Search function - find films easier
  */
 function addReview(sortBy) {
-    // Clears the existing reviews
+    /* Clears the existing reviews
     $("#col-1").empty();
     $("#col-2").empty();
-    $("#col-3").empty();
+    $("#col-3").empty(); */
 
     // Reads the JSON database storing reviews
     $.getJSON("client/json/reviewsDB.json", function (json) {

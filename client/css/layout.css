@@ -1,6 +1,7 @@
 /* Font and colours */
 html * {
     font-family: muli, sans-serif;
+    font-weight: 400;
 
     --primary-color: #007BFF;
     --secondary-color: #3FB3FB;
@@ -8,6 +9,12 @@ html * {
 
     --accent-color: #F8F8F8;
     --shadow-color: #B8B8B8;
+    --dark-shadow-color: #000000;
+}
+
+/* Always make space for scrollbar */
+body {
+    overflow-y: scroll;
 }
 
 /* Cover */

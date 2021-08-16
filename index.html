@@ -4,6 +4,27 @@
         <title>Homepage</title>
         <link rel="icon" href="client/img/icon.png">
 
+        <!-- Provides internal CSS -->
+        <style>
+            html, body {
+                height: 80%;
+            }
+            #center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+            .me {
+                color: var(--accent-color);
+                font-weight: 200;
+                text-align: center;
+            }
+            .me:hover {
+                cursor: default;
+            }
+        </style>
+
         <!-- Provides external CSS -->
         <link rel="stylesheet" type="text/css" href="client/css/layout.css">
 
@@ -65,8 +86,16 @@
             </nav>
         </header>
 
-        <div>
-            <p></p>
+        <div id="center" class="container main mb-4">
+            <div>
+                <h1 class="me display-3" id="name">Tom Hoad</h1>
+                <br/>
+                <h1 class="me display-4" id="age">20</h1>
+                <br/>
+                <h1 class="me display-4" id="uni">University of Southampton</h1>
+                <br/>
+                <h1 class="me display-4" id="degree">Computer Science</h1>
+            </div>
         </div>
 
         <!-- Provides external JS -->
