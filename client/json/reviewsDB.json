@@ -1,6 +1,24 @@
 {
   "reviews": [
     {
+      "title": "No Time To Die",
+      "year": 2021,
+      "score": 5,
+      "description": "A fitting end to the Daniel Craig era. There is something special about a midnight viewing on the biggest screen possible which certainly felt appropriate for this film. Like Spectre, I think this film will age well over time."
+    },
+    {
+      "title": "Shang-Chi and the Legend of the Ten Rings (2021)",
+      "year": 2021,
+      "score": 5,
+      "description": "A stock photo icon turned Marvel legend. In a franchise full of origin stories, this one will hold its own. What a spectacular display of characters, visual fx and storytelling. Also, who doesn’t love Awkwafina?"
+    },
+    {
+      "title": "The Suicide Squad",
+      "year": 2021,
+      "score": 5,
+      "description": "Wow I was so impressed with this film. It's like Guardians of the Galaxy with the gore turned up to 11 and it was sooo much fun! How on earth is this rated 15 in the UK?"
+    },
+    {
       "title": "Loki",
       "year": 2021,
       "score": 4,
