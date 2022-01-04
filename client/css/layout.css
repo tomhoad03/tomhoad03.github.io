@@ -11,10 +11,15 @@ html * {
     --dark-shadow-color: #000000;
 }
 
+body {
+    background: var(--bg-color);
+}
 .scroll {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+
+    color: var(--accent-color);
 }
 .center {
     display: flex;
@@ -35,44 +40,32 @@ html * {
     justify-content: center;
 }
 
-#cover {
-    background: var(--bg-color);
-}
-
 .navbar {
     transition: background-color 0.4s;
     background: var(--bg-color);
     height: 78px;
 }
-
 .active {
     opacity: 100%;
 }
-
 .inactive {
     opacity: 60%;
 }
-
 .disabled {
     opacity: 30%;
 }
-
 .webpage-links * {
     color: var(--accent-color);
 }
-
 .social-icons * {
     color: var(--accent-color);
 }
-
 .navbar-brand {
     color: var(--accent-color);
 }
-
 .nav-link{
     position: relative;
 }
-
 .nav-link:before, .nav-link:after {
     content: "";
     width: 0;
@@ -82,33 +75,27 @@ html * {
     background-color: var(--accent-color);
     transition: width .15s ease-out;
 }
-
 .nav-link:before {
     left: 50%;
     transform: translateX(-50%);
 }
-
 .nav-link:after {
     right: 50%;
     transform: translateX(50%);
 }
-
 .nav-link:hover:before, .nav-link:hover:after {
     width: 100%;
     transition-duration: .15s;
 }
 
 .scroll::-webkit-scrollbar {
-    width: 0.3rem;
+    width: 0.32rem;
 }
 .scroll::-webkit-scrollbar-track {
     background: var(--secondary-color);
 }
 .scroll::-webkit-scrollbar-thumb {
     background: var(--accent-color);
-}
-.page-scroll {
-    height: 2500px;
 }
 
 .link-icon {
@@ -118,14 +105,6 @@ html * {
 }
 .link-icon:hover {
     text-shadow: 0 0 6px var(--shadow-color);
-}
-
-.footer {
-    background-color: var(--accent-color);
-}
-
-.jumbotron-intro * {
-    display: inline-block;
 }
 
 iframe {
