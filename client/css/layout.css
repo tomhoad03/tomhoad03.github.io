@@ -11,6 +11,10 @@ html * {
     --dark-shadow-color: #000000;
 }
 
+.text-muted {
+    color: var(--dark-shadow-color) !important;
+}
+
 .body {
     background: var(--bg-color);
 }
