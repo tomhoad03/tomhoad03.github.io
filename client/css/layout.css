@@ -1,4 +1,3 @@
-/* Font and colours */
 html * {
     font-family: muli, sans-serif;
     font-weight: 400;
@@ -12,45 +11,68 @@ html * {
     --dark-shadow-color: #000000;
 }
 
-/* Always make space for scrollbar */
-body {
+.scroll {
+    height: 100vh;
     overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+.me {
+    color: var(--accent-color);
+    font-weight: 200;
+    text-align: center;
+}
+.me:hover {
+    cursor: default;
+}
+.social-icons, .webpage-links {
+    justify-content: center;
 }
 
-/* Cover */
 #cover {
     background: var(--bg-color);
 }
 
-/* Navbar */
 .navbar {
     transition: background-color 0.4s;
     background: var(--bg-color);
     height: 78px;
 }
+
 .active {
     opacity: 100%;
 }
+
 .inactive {
     opacity: 60%;
 }
+
 .disabled {
     opacity: 30%;
 }
-#webpage-links * {
+
+.webpage-links * {
     color: var(--accent-color);
 }
-#social-icons * {
+
+.social-icons * {
     color: var(--accent-color);
 }
+
 .navbar-brand {
     color: var(--accent-color);
 }
 
-/* Navbar item hover */
 .nav-link{
     position: relative;
 }
+
 .nav-link:before, .nav-link:after {
     content: "";
     width: 0;
@@ -60,34 +82,35 @@ body {
     background-color: var(--accent-color);
     transition: width .15s ease-out;
 }
+
 .nav-link:before {
     left: 50%;
     transform: translateX(-50%);
 }
+
 .nav-link:after {
     right: 50%;
     transform: translateX(50%);
 }
+
 .nav-link:hover:before, .nav-link:hover:after {
     width: 100%;
     transition-duration: .15s;
 }
 
-/* Scrollbar */
-body::-webkit-scrollbar {
+.scroll::-webkit-scrollbar {
     width: 0.3rem;
 }
-body::-webkit-scrollbar-track {
+.scroll::-webkit-scrollbar-track {
     background: var(--secondary-color);
 }
-body::-webkit-scrollbar-thumb {
+.scroll::-webkit-scrollbar-thumb {
     background: var(--accent-color);
 }
 .page-scroll {
     height: 2500px;
 }
 
-/* Social icon links */
 .link-icon {
     margin-left: 20px;
     font-size: 40px;
@@ -97,18 +120,14 @@ body::-webkit-scrollbar-thumb {
     text-shadow: 0 0 6px var(--shadow-color);
 }
 
-/* Footer */
 .footer {
     background-color: var(--accent-color);
 }
 
-/* Elements on multiple pages */
 .jumbotron-intro * {
     display: inline-block;
 }
-.main {
-    margin-top: 110px;
-}
+
 iframe {
     border: none;
 }
