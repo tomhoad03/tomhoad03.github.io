@@ -11,4 +11,9 @@ function main() {
     }
 
     document.getElementById("age-text").innerHTML = age;
+
+    $('.carousel').carousel({
+        interval: 3000,
+        cycle: true
+    });
 }
