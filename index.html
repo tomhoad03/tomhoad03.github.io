@@ -20,15 +20,18 @@
         <!-- Provides GitHub Calendar -->
         <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
         <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+        <!-- Provides external js -->
+        <script src="client/js/index.js"></script>
     </head>
 
-    <body class="body">
+    <body class="body" onload="main()"> >
         <div class="scroll">
             <div class="center container main mb-4">
                 <div>
                     <h1 class="me display-3">Tom Hoad</h1>
                     <br/>
-                    <h1 class="me display-4">22</h1>
+                    <h1 class="me display-4" id="age-text"></h1>
                     <br/>
                     <h1 class="me display-8">Computer Science MEng - University of Southampton</h1>
                     <br/>

@@ -26,5 +26,11 @@
     <orderEntry type="library" name="popper.js" level="application" />
     <orderEntry type="library" name="github-calendar" level="application" />
     <orderEntry type="library" name="github-calendar" level="application" />
+    <orderEntry type="library" name="github-calendar" level="application" />
+    <orderEntry type="library" name="popper.js" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="jquery-3.5.1" level="application" />
+    <orderEntry type="library" name="font-awesome" level="application" />
+    <orderEntry type="library" name="opg8cqi" level="application" />
   </component>
 </module>
