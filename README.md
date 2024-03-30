@@ -5,4 +5,4 @@ Uses a library of languages including HTML, javascript, CSS, etc.
 This website will be kept up to date with whatever I want to add and can be used as a test bed for web development
 techniques.
 
-![portfolio](https://i.imgur.com/zVpf7Dc.jpg)
+![portfolio](/client/img/readme.png)
